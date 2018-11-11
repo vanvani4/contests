@@ -10,9 +10,9 @@ import { Contest } from '../../models/contest';
 })
 export class AboutComponent implements OnInit {
 
-  private id: string;
-  private activeItem;
-  private contests;
+  public id: string;
+  public activeItem;
+  public contests;
 
   constructor(private router: Router, private route: ActivatedRoute, private mainService: MainService) { }
 

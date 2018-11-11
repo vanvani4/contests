@@ -1,0 +1,36 @@
+<div class="container">
+  <form class="form" [formGroup]="createForm" (ngSubmit)="createContest(createForm)" novalidate>
+
+    <div class="form__name">
+      <label for="name">Название конкурса</label>
+      <div id="name">
+        <input formControlName="name" type="text">
+      </div>
+    </div>
+    <div *ngIf="formErrors.name" class="alert">
+      {{formErrors.name}}
+    </div>
+
+    <div class="form__description">
+      <label for="description">Описание</label>
+      <div id="description">
+        <textarea formControlName="description" type="text">
+          </textarea>
+      </div>
+    </div>
+    <div *ngIf="formErrors.description" class="alert">
+      {{formErrors.description}}
+    </div>
+
+    <div class="form__img">
+      <div id="img">
+        <input formControlName="image" type="file" #image>
+      </div>
+      <button [disabled]="createForm.invalid">Добавить конкурс</button>
+    </div>
+  </form>
+
+  <div class="exit">
+    <button (click)="exit()">Exit</button>
+  </div>
+</div>

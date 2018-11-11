@@ -1,0 +1,8 @@
+<section class="posts">
+  <h2>Последние конкурсы</h2>
+  <div class="posts__last">
+    <a href="/contest/{{contest._id}}" *ngFor="let contest of contests">
+      <img src="{{contest.image}}" alt="Блог">
+    </a>
+  </div>
+</section>

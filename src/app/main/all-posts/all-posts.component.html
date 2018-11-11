@@ -1,0 +1,12 @@
+<section class="posts">
+  <h2>Все конкурсы</h2>
+  <div class="posts__all">
+    <a href="/contest/{{contest._id}}" *ngFor="let contest of contests">
+      <img src="{{contest.image}}" alt="Блог">
+      <h3>{{contest.name}}</h3>
+      <p>
+        {{contest.description}}
+      </p>
+    </a>
+  </div>
+</section>

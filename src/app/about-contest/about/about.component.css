@@ -1,0 +1,15 @@
+.about {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.posts__about {
+    margin-left: 10px;
+}
+
+.posts__last {
+    width: 235px;
+    margin-right: 10px;
+    margin-left: 10px;
+}

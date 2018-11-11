@@ -1,0 +1,10 @@
+.form {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+.exit {
+    margin-left: 10px;
+}

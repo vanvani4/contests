@@ -1,0 +1,21 @@
+.footer {
+    background-image: url("/assets/img/bg_footer.png");
+    display: flex;
+    /* flex-flow: row nowrap; */
+    /* align-items: flex-start; */
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.footer p {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    color: white;
+    font-size: 12pt;
+    padding-left: 14px;
+    padding-right: 14px;
+}

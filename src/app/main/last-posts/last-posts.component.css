@@ -1,0 +1,14 @@
+.posts__last {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.posts__last img {
+    /* Убираем нижние отступы в img */
+    vertical-align: bottom; 
+}
+
+h2 {
+    margin-left: 20px;
+}

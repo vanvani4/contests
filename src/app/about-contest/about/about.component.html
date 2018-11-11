@@ -1,0 +1,23 @@
+<section class="posts">
+    <div class="about">
+        <div class="posts__about">
+            <h1>{{activeItem.name}}</h1>
+            <img src="{{activeItem?.image}}" alt="Блог">
+            <p>
+                {{activeItem?.description}}
+            </p>
+        </div>
+        <div class="posts__last">
+            <h2>Последние конкурсы</h2>
+            <a href="/contest/{{contests[0]._id}}">
+                <img src="{{contests[0].image}}" alt="Блог">
+            </a>
+            <a href="/contest/{{contests[1]._id}}">
+                <img src="{{contests[1].image}}" alt="Блог">
+            </a>
+            <a href="/contest/{{contests[2]._id}}">
+                <img src="{{contests[2].image}}" alt="Блог">
+            </a>
+        </div>
+    </div>
+</section>
